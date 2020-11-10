@@ -4,15 +4,98 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>MoGo</title>
 </head>
 
 <body>
-  <h1>MoGo</h1>
-  <a href="#">
-    <img src="img/logo.jpeg" alt="">
-  </a>
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <a class="logo" href="#"><img src="img/logo.svg" width="86" alt=""></a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__list-item">
+              <a class="menu__list-link active" href="#">About</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Service</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Work</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Blog</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">Contact</a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                <img class="shopping-cart" src="img/shopping_cart.png" width="19" alt="">
+              </a>
+            </li>
+            <li class="menu__list-item">
+              <a class="menu__list-link" href="#">
+                <img class="search" src="img/search.png" width="19" alt="">
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-section intro">
+    <div class="page-section__wrapper intro__wrapper">
+      <div class="container intro__container">
+        <div class="intro__inner">
+          <h2 class="intro__suptitle suptitle">Creative Template</h2>
+          <h1 class="intro__title title">Welcome to MoGo</h1>
+          <button class="btn btn--intro btn-reset">Learn more</button>
+        </div>
+
+        <div class="slider">
+          <div class="slider__item active">
+            <span class="slider__num">01</span>
+            Intro
+          </div>
+          <div class="slider__item">
+            <span class="slider__num">02</span>
+            Work
+          </div>
+          <div class="slider__item">
+            <span class="slider__num">03</span>
+            About
+          </div>
+          <div class="slider__item">
+            <span class="slider__num">04</span>
+            Contacts
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-section about">
+    <div class="page-section__wrapper about__wrapper">
+      <div class="container about__container">
+        <div class="section__header section__inner">
+          <h3 class="section__suptitle suptitle">What we do</h3>
+          <h2 class="section__title title">Story about us</h2>
+          <div class="section__text text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>

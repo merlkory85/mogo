@@ -1,0 +1,140 @@
+/* INTRO */
+
+.intro {
+  &__wrapper {
+    position: relative;
+    padding-top: 230px;
+    background: {
+      image: url("/img/main_bg-image.jpeg");
+      position: top center;
+    }
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    &::after {
+      display: block;
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0.9;
+      background: linear-gradient(
+        to top,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      );
+    }
+  }
+  &__container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__inner {
+    display: block;
+    max-width: 802px;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 156px;
+  }
+  &__suptitle {
+    margin-bottom: 32px;
+  }
+}
+
+.suptitle {
+  font: {
+    family: $cursive-font;
+    weight: 400;
+    size: 72px;
+  }
+}
+
+.intro__title {
+  display: block;
+  font: {
+    family: $cursive-font;
+    weight: 700;
+    size: 150px;
+  }
+  line-height: 140px;
+  margin-bottom: 69px;
+  text-transform: uppercase;
+}
+.title {
+  font-family: $main-font;
+  text-transform: uppercase;
+  &::after {
+    content: "";
+    display: block;
+    margin: 60px auto 0;
+    width: 61px;
+    height: 4px;
+    background-color: $white;
+  }
+}
+.btn {
+  color: $white;
+  padding: 10px 34px;
+  font: {
+    family: $main-font;
+    weight: 700;
+    size: 14px;
+  }
+  transition: all 0.3s linear;
+  text: {
+    transform: uppercase;
+    align: center;
+  }
+  &--intro {
+    border: 3px solid $white;
+  }
+  &:hover {
+    color: $carbon;
+    background-color: $white;
+  }
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  &__item {
+    position: relative;
+    width: 23%;
+    font: {
+      family: $main-font;
+      weight: 400;
+      size: 18px;
+    }
+    border-top: 3px solid $white;
+    opacity: 0.7;
+    padding: 20px 0;
+    color: $white;
+    z-index: 1;
+    text-transform: uppercase;
+    &.active {
+      opacity: 1;
+      &::before {
+        content: "";
+        display: block;
+        width: 70px;
+        height: 3px;
+
+        position: absolute;
+        top: -3px;
+        left: 0;
+        background-color: $meat;
+      }
+    }
+  }
+  &__num {
+    font: {
+      size: 24px;
+      weight: 700;
+    }
+  }
+}
