@@ -49,3 +49,28 @@
     line-height: 24px;
   }
 }
+
+// .section__gallery {}
+// .gallery__about {
+// }
+// .about__list {
+// }
+.gallery {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__item {
+    display: block;
+    max-width: 372px;
+    height: 252px;
+  }
+  &__item:not(:last-child) {
+    margin-right: 25px;
+  }
+}
+
+// .about__item {
+// }
